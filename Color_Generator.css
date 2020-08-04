@@ -1,0 +1,50 @@
+body{
+		padding:0;
+		margin:0;
+		font-family:"Baloo Da 2";
+		}
+.celebration{
+		height:40vh;
+		width:50vw;
+		background-colo: pink;
+		margin:25% auto 10% auto;
+		background:url("happy.jpg") no-repeat center;
+		background-blend-mode:screen;
+		background-size:cover;
+		border:1px solid #dbdbdb;
+		opacity:0;
+		}
+.nextPageBtn{
+		padding:10px 15px;
+		border:0px solid grey;
+		box-shadow:0px 7px 1px #999;
+		border-radius:15px;
+		outline:none;
+		display:block;
+		margin:auto;
+		}
+.nextPageBtn:active{
+		transform:translateY(7px);
+		box-shadow:0px 2px 2px #666;
+		}
+.expandRect1,.expandRect2{
+		position:absolute;
+		width:0px;
+		height:0px;
+		border-radius:50%;
+		z-index:-3;
+		}
+.expandRect1{
+		left:50%;
+		top:40%;
+		border-radius:0%;
+		}
+
+@keyframes animateExpansion{
+		0%{height:0px; width:0px}
+		100%{height:100vh; width:100vw; left:0vw; top:0px}
+		}
+@keyframes appear{
+		0%{opacity:0;}
+		100%{opacity:1;}
+		}

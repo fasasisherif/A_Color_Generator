@@ -22,6 +22,7 @@ body{
 		outline:none;
 		display:block;
 		margin:auto;
+                background-color:#dbdbdb;
 		}
 .nextPageBtn:active{
 		transform:translateY(7px);
